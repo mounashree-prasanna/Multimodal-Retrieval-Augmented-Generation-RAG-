@@ -1,14 +1,26 @@
-# Multimodal RAG (Part 3)
+# Multimodal Retrieval-Augmented Generation (RAG)
 
-This folder contains the code and outputs for the Multimodal Retrieval-Augmented Generation (RAG) task.
+This project corresponds to **Part I** of the report `Lab2_Report_Team15 (2).pdf`.
 
-## Contents
+## Project summary (from report)
 
-- `rag_best.ipynb` - Main notebook implementing the multimodal RAG pipeline.
-- `submission (4).csv` - Submission/prediction output generated from the notebook.
+This system answers macroeconomics questions grounded in a PDF textbook using a multimodal RAG pipeline that combines:
 
-## How to run
+- **BGE-large** text embeddings
+- **CLIP** visual embeddings for figures/tables
+- **ChromaDB** vector storage
+- **BM25** re-ranking
+- **Claude Sonnet** for final answer generation
+
+Reported outcome: **Kaggle score = 0.366**.
+
+## Repository contents
+
+- `rag_best.ipynb` - Main notebook implementing the pipeline.
+- `submission (4).csv` - Generated submission file.
+
+## Run
 
 1. Open `rag_best.ipynb` in Jupyter/Colab.
-2. Install the required Python dependencies used in the notebook.
-3. Run all cells in sequence to reproduce the outputs.
+2. Install dependencies used in the notebook.
+3. Run all cells to reproduce outputs.
